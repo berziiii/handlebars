@@ -1,4 +1,4 @@
-$main-background-color: $dark-green;
+$main-background-color: $off-white;
 $secondary-background: $light-green;
 $font-color: $purpleish;
 
@@ -14,10 +14,22 @@ h2 {
 .nav {
   @include make-row();
   margin-left: 75%;
-  .nav-button {
+  .nav button {
     @include make-lg-column(3);
     @include make-md-column(3);
     @include make-sm-column(3);
     @include make-xs-column(3);
   }
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.book-content, .title-content {
+  padding: 0% 5%;
 }
